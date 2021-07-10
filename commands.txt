@@ -1,0 +1,73 @@
+    1  wget https://packages.chef.io/files/stable/chef-server/14.1.0/ubuntu/18.04/chef-server-core_14.1.0-1_amd64.deb
+    2  sudo dpkg -i chef-server-core_*.deb
+    3  rm chef-server-core_*.deb
+    4  sudo chef-server-ctl reconfigure
+    5  mkdir .chef
+    6  chef-server-ctl
+    7  sudo chef-server-ctl
+    8  who
+    9  sudo chef-server-ctl user-create prashantsnehigm prashant snehi prashant.snehi@gmail.com admin123 --filename ~/.chef/prashantsnehigm.pem
+   10  cd .chef/
+   11  ll
+   12  cat prashantsnehigm.pem 
+   13  clear
+   14  sudo chef-server-ctl user-list
+   15  cd ..
+   16  sudo chef-server-ctl org-create simplilearn "simplilearnltd" --association_user prashantsnehigm --filename ~/.chef/simplilearn.pem
+   17  simplilearn
+   18  sudo chef-server-ctl org-list
+   19  sudo chef-server-ctl install chef-manage
+   20  sudo chef-server-ctl reconfigure
+   21  sudo chef-manage-ctl reconfigure
+   22  sudo opscode-manage-ctl reconfigure
+   23  history
+   24  wget https://packages.chef.io/files/stable/chef-workstation/21.1.233/ubuntu/18.04/chef-workstation_21.1.233-1_amd64.deb
+   25  sudo dpkg -i chef-workstation_*.deb
+   26  chef -v
+   27  sudo chef-server-ctl org-list
+   28  clear
+   29  sudo -i
+   30  ifconfig
+   31  ls -l
+   32  vi prashant.rb
+   33  ls
+   34  ll -l
+   35  ls -l
+   36  cat prashant.rb 
+   37  chef-apply prashant.rb 
+   38  sudo chef-apply prashant.rb 
+   39  ls -l
+   40  cd /root
+   41  ls -l
+   42  cd /root/
+   43  sudo cd /root/
+   44  sudo -i
+   45  ls
+   46  ls -l
+   47  cat prashant.rb 
+   48  mkdir chef-repo
+   49  cd chef-repo/
+   50  chef generate cookbook cookbook/prashant
+   51  ll
+   52  chef generate cookbook cookbooks/prashant
+   53  mkdir cookbooks
+   54  chef generate cookbook cookbooks/prashant
+   55  tree
+   56  sudo apt install tree
+   57  tree cookbooks/prashant/
+   58  vi cookbooks/prashant/recipes/default.rb 
+   59  ll
+   60  cd ..
+   61  ll
+   62  cat prashant.rb 
+   63  cd chef-repo/
+   64  ll
+   65  cd cookbooks/
+   66  ll
+   67  cd prashant/
+   68  cd ..
+   69  tree cookbooks/
+   70  vi cookbooks/prashant/recipes/default.rb 
+   71  sudo chef-apply cookbooks/prashant/recipes/default.rb 
+   72  history 
+   73  history >> commands.txt
